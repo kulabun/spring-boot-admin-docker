@@ -22,3 +22,7 @@ repositories {
 dependencies {
     compile 'de.codecentric:spring-boot-admin-starter-server:1.5.7'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.5'
+}
