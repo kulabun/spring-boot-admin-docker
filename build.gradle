@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        maven { url 'https://repo.spring.io/plugins-snapshot' }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE"
+    }
+}
+
+group 'org.labun.springadmin'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: "org.springframework.boot"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'de.codecentric:spring-boot-admin-starter-server:1.5.7'
+}

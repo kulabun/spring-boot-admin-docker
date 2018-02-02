@@ -1,0 +1,6 @@
+version: '2'
+services:
+  spring-boot-admin:
+    build: .
+    ports:
+      - 8080:8080
